@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+
+<!-- Head Section is all nonvisible elements-->
+<head>
+
+    <!-- All inpage style goes here-->
+    <style>
+        :root {
+            --mainbg: #d8d8d8;
+            --headercolor: #ffffff;
+            --navcolor:#001d3d;
+            --navtext: #ffffff;
+            --footercolor: #4a4b4a;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background: var(--headercolor);
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background: var(--navcolor);
+            color: var(--navtext);
+            padding: 1rem;
+        }
+        footer {
+            background: var(--footercolor);
+            color: var(--navtext);
+            padding: 1rem; 
+            min-height: 12vh;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background: var(--mainbg);
+            min-height: 70vh;
+            padding: 2vh;
+        }
+        table {
+            width: 60%;
+            margin: auto;
+            font-size: 1.5rem;
+            text-align: center;
+            border-collapse: collapse;
+            
+        }
+        td {
+            padding: 1.5vh;
+
+        }
+        table, tr, td {
+            border: 1px black solid;
+        }
+        tr:nth-child(odd) {
+            background-color: lightgray;
+        }
+        tr:nth-child(even) {
+            background-color: rgb(211, 211, 211);
+        }
+        tr:nth-child(1) {
+            background-color: slateblue;
+            color: white;
+        }
+
+
+
+    </style>
+
+    <!-- All LINK tags go here-->
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tables</title>
+
+</head>
+
+<!-- Body Section is all visible elements-->
+<body>
+
+    <header>
+        <h1>Tables Intro</h1>
+        <p>
+            Michael Mohan<br>
+            Web 2, 3rd hour<br>
+            1/27/22<br>
+        </p>
+    </header>
+    <nav>
+        Nav
+    </nav>
+    <!-- Main page body here. Use container or DIV -->
+    <div class="container">
+
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Grade</th>
+                <th>Favorite Color</th>
+                <th>favorite food</th>
+
+            </tr>
+            <tr>
+                <td>Billy</td>
+                <td>11th</td>
+                <td>Purple</td>
+                <td>Fried Chicken</td>
+                
+        
+            </tr>
+            <tr>
+                <td>Rachel</td>
+                <td>9th</td>
+                <td>Red</td>
+                <td>Sushi</td>
+
+            </tr>
+            <tr>
+                <td>Betsy</td>
+                <td>10th</td>
+                <td>Pink</td>
+                <td>Salmon</td>
+
+
+            </tr>
+            <tr>
+                <td>Ripa</td>
+                <td>12th</td>
+                <td>Black</td>
+                <td>Ravioli</td>
+             </tr>
+        </table>
+
+        
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+    <footer>
+        Footer
+    </footer>
+
+
+
+
+
+
+
+    <!-- JavaScript Goes Here -->
+
+    
+
+
+
+
+
+</body>
+</html>
