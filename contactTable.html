@@ -1,0 +1,276 @@
+<!doctype html>
+<html>
+
+<!-- Head Section is all nonvisible elements-->
+<head>
+
+    <!-- All inpage style goes here-->
+    <style>
+        :root {
+            --mainbg: #d8d8d8;
+            --headercolor: #ffffff;
+            --navcolor:#001d3d;
+            --navtext: #ffffff;
+            --footercolor: #4a4b4a;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background: var(--headercolor);
+            padding: 1rem;
+            text-align: center;
+        }
+        h1 {
+            border-radius: 2rem;
+            background-color: rgb(152, 30, 223);
+            width: 60%;
+            text-align: center;
+            margin:auto;
+            padding: 1rem;
+        }
+        h3 {
+            margin: .25rem;
+            padding: .5rem;
+            background-color: #79a5d4;
+            border-radius: .5rem;
+            width: 80%;
+            text-align: center;
+            justify-content: center;
+        }
+        p {
+            margin: .25rem;
+            padding: .5rem;
+            text-align: center;
+        }
+        nav {
+            background: var(--navcolor);
+            color: var(--navtext);
+            padding: 1rem;
+        }
+        footer {
+            background: var(--footercolor);
+            color: var(--navtext);
+            padding: 1rem; 
+            min-height: 12vh;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background: var(--mainbg);
+            min-height: 70vh;
+            padding: 2vh;
+           
+        }
+        
+        table {
+            width: 60%;
+            margin: auto;
+            font-size: 1.5rem;
+            text-align: center;
+            border-collapse: collapse;
+            
+        }
+        td {
+            padding: 1.5vh;
+
+        }
+        table, tr, td, th {
+            border: 1px black solid;
+            padding: 1rem;
+        }
+        tr:nth-child(odd) {
+            background-color: lightgray;
+        }
+        tr:nth-child(even) {
+            background-color: rgb(211, 211, 211);
+        }
+        tr:nth-child(1) {
+            background-color: slateblue;
+            color: white;
+        }
+        caption {
+            text-align: center;
+            padding: 2vh;
+        }
+        label {
+            display:block;
+            font-size: 1.25rem;
+            padding: .5rem;
+           
+
+        }
+        input[type=text] {
+            padding: .5rem;
+            margin: .5rem;
+            font-size: 1.25rem;
+            width: 50%;
+        }
+        input[type=submit] {
+            display: block;
+            padding: 1rem;
+            font-size: 1.5rem;
+            margin: .5rem;
+        }
+        input[type=email] {
+            padding: .5rem;
+            margin: .5rem;
+            font-size: 1.25rem;
+            width: 50%;
+        }
+        input[type=number] {
+            padding: .5rem;
+            margin: .5rem;
+            font-size: 1.25rem;
+            width: 50%;
+        }
+        
+       
+       
+
+
+
+    </style>
+
+    <!-- All LINK tags go here-->
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Student Contact</title>
+
+</head>
+
+<!-- Body Section is all visible elements-->
+<body>
+
+    <header>
+        <h1>Student Schedule/Contact</h1>
+        <p>
+            Michael Mohan<br>
+            Web 2, 3rd hour<br>
+            3/01/22<br>
+        </p>
+    </header>
+    <nav>
+        Nav
+    </nav>
+    <!-- Main page body here. Use container or DIV -->
+    <div class="container">
+
+        <h3>Contact Form</h3>
+        
+        <form name="myform" action="#">
+
+            <label for="sub">Subject</label>
+            <input type="text" name="sub" placeholder="Subject">
+
+            <label for="ID#">ID Number</label>
+            <input type="text" name="ID#" placeholder="Enter ID#">
+
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" placeholder="Enter First Name">
+            
+            <label for="lname">Last Name:</label>
+            <input type="text" name="lname" placeholder="Enter Last Name">
+
+            <label for="email">Email Address</label>
+            <input type="email" name="email" placeholder="Enter Email Address">
+
+            <label for="number">Number</label>
+            <input type="number" name="number" placeholder="Enter phone number">
+
+            <input type="submit" name="submit" value="Submit Form"> 
+
+        </form>
+
+        <table>
+            <caption>Class Schedule</caption>
+
+        <tr>
+            <th>Hour</th>
+            <th>Class</th>
+            <th>Teacher</th>
+            <th>Room Number</th>
+            
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Technical Writing</td>
+            <td>Ms. Koss</td>
+            <td>b221</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Calculus</td>
+            <td>Mr. Smith</td>
+            <td>h225</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Web design 2</td>
+            <td>Mr. Meier</td>
+            <td>T416</td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td>Adv Web</td>
+            <td>Mr. Meier</td>
+            <td>T416</td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td>Physical education</td>
+            <td>Mr. Genuette</td>
+            <td>Gym</td>
+        </tr>
+
+        <tr>
+            <td>6</td>
+            <td>Robotics</td>
+            <td>Mr. Meier</td>
+            <td>T416</td>
+        </tr>
+
+
+
+        </table>
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+    <footer>
+        Footer
+    </footer>
+
+
+
+
+
+
+
+    <!-- JavaScript Goes Here -->
+
+    
+
+
+
+
+
+</body>
+</html>
