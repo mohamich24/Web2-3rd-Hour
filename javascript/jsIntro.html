@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+
+<!-- Head Section is all nonvisible elements-->
+<head>
+
+    <!-- All inpage style goes here-->
+    <style>
+        :root {
+            --mainbg: #d8d8d8;
+            --headercolor: #ffffff;
+            --navcolor:#001d3d;
+            --navtext: #ffffff;
+            --footercolor: #4a4b4a;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background: var(--headercolor);
+            padding: 1rem;
+        }
+        nav {
+            background: var(--navcolor);
+            color: var(--navtext);
+            padding: 1rem;
+        }
+        footer {
+            background: var(--footercolor);
+            color: var(--navtext);
+            padding: 1rem; 
+            min-height: 12vh;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background: var(--mainbg);
+            min-height: 70vh;
+        }
+        @media only screen and (max-width:800px) {
+            .container {
+                width: 100%;
+                margin: auto;
+            }
+        }
+        
+        
+
+
+
+    </style>
+
+    <!-- All LINK tags go here-->
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Javascript Intro</title>
+
+</head>
+
+<!-- Body Section is all visible elements-->
+<body>
+
+    <header>
+        Header
+    </header>
+    <nav>
+        Nav
+    </nav>
+    <!-- Main page body here. Use container or DIV -->
+    <div class="container" id="container">
+        <h1 class="pageHeader" id="pageHeader">Intro to JavaScript</h1>
+
+        <!-- Start of Card-->
+        <div class="card-container">
+
+            <div class="card" id="card1"></div>
+                <div class="card-body">
+                    <p>
+                        Generic text
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <h3 class="card-title">card #1 Title</h3>
+                </div> <!-- End card-footer-->
+
+            </div> <!-- End card-->
+
+            <!-- Start of Card-->
+        <div class="card-container">
+
+            <div class="card" id="card2"></div>
+                <div class="card-body">
+                    <p>
+                        Generic text
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <h3 class="card-title">card #2 Title</h3>
+                </div> <!-- End card-footer-->
+
+            </div> <!-- End card-->
+
+            <!-- Start of Card-->
+        <div class="card-container">
+
+            <div class="card" id="card3"></div>
+                <div class="card-body">
+                    <p>
+                        Generic text
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <h3 class="card-title">card #3 Title</h3>
+                </div> <!-- End card-footer-->
+
+            </div> <!-- End card-->
+
+            <div class="button-container">
+                <button onclick="">Click me</button>
+                <button onclick="">Click me</button>
+                <button onclick="">Click me</button>
+    
+                <button onclick="">Click me</button>
+                <button onclick="">Click me</button>
+                <button onclick="">Click me</button>
+    
+                <button onclick="">Click me</button>
+                <button onclick="">Click me</button>
+                <button onclick="">Click me</button>
+    
+            </div>
+
+        </div> <!-- End card-container -->
+
+        
+    </div> <!-- End container-->
+
+
+
+
+
+    <footer>
+        Footer
+    </footer>
+
+
+
+
+
+
+
+    <!-- JavaScript Goes Here -->
+
+    
+
+
+
+
+
+</body>
+</html>
