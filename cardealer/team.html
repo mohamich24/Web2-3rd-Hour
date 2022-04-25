@@ -40,7 +40,7 @@
 
         <div class="grid-item">
             <div class="grid-image">
-                <img src="images/denice.png" alt="#">
+                <img onmouseover="replaceImage(0)" onmouseout="replaceImage(0)" src="images/denice.png" data-image2="images/dude.png" alt="#">
             </div>
             <h3>Oscar Pezdispensor</h3>
             <h4>Reigonal Manager/Buisness owner</h4>
@@ -51,7 +51,7 @@
 
         <div class="grid-item">
             <div class="grid-image">
-                <img src="images/debbie.png" alt="#">
+                <img onmouseover="replaceImage(1)" onmouseout="replaceImage(1)" src="images/debbie.png" data-image2="images/dude.png" alt="#">
             </div>
             <h3>Debbra carpenter</h3>
             <h4>General manager/Store owner</h4>
@@ -62,7 +62,7 @@
 
         <div class="grid-item">
             <div class="grid-image">
-                <img src="images/richard.png" alt="#">
+                <img onmouseover="replaceImage(2)" onmouseout="replaceImage(2)" src="images/richard.png" data-image2="images/dude.png" alt="#">
             </div>
             <h3>Richard Dixon The third</h3>
             <h4>Assistant to Debbra</h4>
@@ -73,7 +73,7 @@
 
         <div class="grid-item">
             <div class="grid-image">
-                <img src="images/chris.png" alt="#">
+                <img onmouseover="replaceImage(3)" onmouseout="replaceImage(3)" src="images/chris.png" data-image2="images/dude.png" alt="#">
             </div>
             <h3>Chris Chandler</h3>
             <h4>Assistant to the Regional Manager</h4>
@@ -91,7 +91,7 @@
 
         <div class="grid-item">
             <div class="grid-image">
-                <img src="images/dave.png" alt="#">
+                <img onmouseover="replaceImage(4)" onmouseout="replaceImage(4)" src="images/dave.png" data-image2="images/dude.png"  alt="#">
             </div>
             <h3>Dave Vultron</h3>
             <h4>Salesman</h4>
@@ -102,7 +102,7 @@
 
         <div class="grid-item">
             <div class="grid-image">
-                <img src="images/thor.png" alt="#">
+                <img onmouseover="replaceImage(5)" onmouseout="replaceImage(5)" src="images/thor.png" data-image2="images/dude.png"  alt="#">
             </div>
             <h3>Thor, son of odin.</h3>
             <h4>The Sales Rep of thunder</h4>
@@ -113,7 +113,7 @@
 
         <div class="grid-item">
             <div class="grid-image">
-                <img src="images/sean.png" alt="#">
+                <img onmouseover="replaceImage(6)" onmouseout="replaceImage(6)" src="images/sean.png" data-image2="images/dude.png" alt="#">
             </div>
             <h3>Sean McGlockland</h3>
             <h4>Porter</h4>
@@ -124,7 +124,7 @@
 
         <div class="grid-item">
             <div class="grid-image">
-                <img src="images/joemama.png" alt="#">
+                <img onmouseover="replaceImage(7)" onmouseout="replaceImage(7)" src="images/joemama.png" data-image2="images/dude.png" alt="#">
             </div>
             <h3>Joseph Morman</h3>
             <h4>Driver</h4>
@@ -147,17 +147,20 @@
     </footer>
 
 
+ <!-- JavaScript Goes Here -->
 
+    <script>
+        function replaceImage(num) {
+            var element = document.getElementsByTagName('img')[num];
+            var originalImage = element.getAttribute('src');
+            var newImage = element.getAttribute('data-image2');
+           
 
-
-
-
-    <!-- JavaScript Goes Here -->
-
-    
-
-
-
+            element.setAttribute('src', newImage);
+            element.setAttribute('data-image2', originalImage);
+            //alert(newImage)
+        }
+    </script>
 
 
 </body>
